@@ -564,97 +564,444 @@ public class Gabungan extends Reporting {
 		gabungan.clickRefresh4();
 		test4.log(Status.PASS, "User berhasil klik button refresh");
 
-		//////////////// DAFTAR REQUEST////////////////////////
-		ExtentTest test5 = extentReports.createTest("Modul Daftar Request");
-		gabungan.goDaftarRequest();
-		test5.log(Status.PASS, "User berhasil ke form Daftar Request");
+////////////////DAFTAR REQUEST////////////////////////
+	ExtentTest test5 = extentReports.createTest("Modul Daftar Request");
+	gabungan.goDaftarRequest();
+	test5.log(Status.PASS, "User berhasil ke form Daftar Request");
 
-		gabungan.goInfoAnggota();
-		test5.log(Status.PASS, "User berhasil ke Info Anggota");
+/////////////// Absen ////////////////
 
-		gabungan.goDetail();
-		test5.log(Status.PASS, "User berhasil ke Detai Anggota");
+	Thread.sleep(2000);
+	gabungan.clickAbsen();
+	test5.log(Status.PASS, "User berhasil klik button kategori absen");
 
-		gabungan.goOKRequest();
-		test5.log(Status.PASS, "User berhasil klik Ok");
+	gabungan.goPilihWaktu();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu");
 
-		gabungan.goEditRequest();
-		test5.log(Status.PASS, "User berhasil ke form Edit Request");
+	gabungan.clickDaily();
+	test5.log(Status.PASS, "User berhasil klik kategori daily");
 
-		gabungan.FotoRequest();
-		test5.log(Status.PASS, "User berhasil mengganti foto");
+	gabungan.goCalendar();
+	test5.log(Status.PASS, "User berhasil klik button calender dan menampilkan calendar");
 
-		gabungan.EditJumlahCuti(dataGabungan.CUTI);
-		test5.log(Status.PASS, "User berhasil mengganti cuti");
+	gabungan.clickDate();
+	test5.log(Status.PASS, "User berhasil klik tanggal yang diinginkan");
 
-		gabungan.btnDropdownShift();
-		test5.log(Status.PASS, "User berhasil klik dropdown Pilih Shift");
+	gabungan.clickOK4();
+	test5.log(Status.PASS, "User berhasil klik OK4 untuk konfirmasi");
 
-		gabungan.btnPilihShiftFullTime();
-		test5.log(Status.PASS, "User berhasil klik Full Time");
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data");
 
-		gabungan.btnDropdownShiftFullTime();
-		test5.log(Status.PASS, "User berhasil klik dropdown Pilih Shift");
+	Thread.sleep(2000);
+	gabungan.goPilihWaktuDaily();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu");
 
-		gabungan.btnPilihShiftFDS();
-		test5.log(Status.PASS, "User berhasil klik FDS");
+	gabungan.clickWeekly();
+	test5.log(Status.PASS, "User berhasil klik kategori weekly");
 
-		gabungan.btnDropdownShiftFDS();
-		test5.log(Status.PASS, "User berhasil klik dropdown Pilih Shift");
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data");
 
-		gabungan.btnPilihShiftShift3();
-		test5.log(Status.PASS, "User berhasil klik Shift 3");
+	Thread.sleep(2000);
+	gabungan.goPilihWaktuWeekly();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu");
 
-		gabungan.btnDropdownShiftShift3();
-		test5.log(Status.PASS, "User berhasil klik dropdown Pilih Shift");
+	gabungan.clickMonthly();
+	test5.log(Status.PASS, "User berhasil klik kategori monthly");
 
-		gabungan.btnPilihShiftFreelance();
-		test5.log(Status.PASS, "User berhasil klik Freelance");
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data");
 
-		gabungan.btnDropdownShiftFreelance();
-		test5.log(Status.PASS, "User berhasil klik dropdown Pilih Shift");
+	/////////////// Telat ////////////////
 
-		gabungan.btnPilihShiftShifting();
-		test5.log(Status.PASS, "User berhasil klik Shifting");
+	gabungan.dropdownAbsen();
+	test5.log(Status.PASS, "User berhasil klik dropdown absen");
 
-		gabungan.btnDropdownShiftShifting();
-		test5.log(Status.PASS, "User berhasil klik dropdown Pilih Shift");
+	Thread.sleep(2000);
+	gabungan.clickTelat();
+	test5.log(Status.PASS, "User berhasil pilih kategori (telat)");
 
-		gabungan.btnPilihShiftShift9();
-		test5.log(Status.PASS, "User berhasil klik Shift 9");
+	gabungan.dropdownBelumTerproses();
+	test5.log(Status.PASS, "User berhasil klik dropdown belum terproses (telat)");
 
-		gabungan.btnDropdownLembur();
-		test5.log(Status.PASS, "User berhasil klik Pilih Lembur");
+	gabungan.clickApproved();
+	test5.log(Status.PASS, "User berhasil pilih approved (telat)");
 
-		gabungan.btnPilihLembur();
-		test5.log(Status.PASS, "User berhasil klik Pilih Tidak Lembur");
+	///
+	gabungan.goPilihWaktu();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu (telat)");
 
-		gabungan.btnPengubahData();
-		test5.log(Status.PASS, "User berhasil klik button Ubah Data");
+	gabungan.clickDaily();
+	test5.log(Status.PASS, "User berhasil klik kategori daily (telat)");
 
-		gabungan.btnOKRequest();
-		test5.log(Status.PASS, "User berhasil klik button Ok");
+	gabungan.goCalendar1();
+	test5.log(Status.PASS, "User berhasil klik button calender dan menampilkan calendar (telat)");
 
-		gabungan.btnRequestData();
-		test5.log(Status.PASS, "User berhasil klik Request Data");
+	gabungan.clickDate();
+	test5.log(Status.PASS, "User berhasil klik tanggal yang diinginkan (telat)");
 
-		gabungan.btnDropdownAll();
-		test5.log(Status.PASS, "User berhasil klik dropdown ALL");
+	gabungan.clickOK4();
+	test5.log(Status.PASS, "User berhasil klik OK4 untuk konfirmasi (telat)");
 
-		gabungan.btnPilihNIK();
-		test5.log(Status.PASS, "User berhasil pilih NIK");
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data (telat)");
 
-		gabungan.btnDropdownNIK();
-		test5.log(Status.PASS, "User berhasil klik dropdown NIK");
+	gabungan.dropdownApproved();
+	test5.log(Status.PASS, "User berhasil klik dropdown belum terproses (telat)");
 
-		gabungan.btnPilihNama();
-		test5.log(Status.PASS, "User berhasil pilih Nama");
+	gabungan.clickRejected();
+	test5.log(Status.PASS, "User berhasil pilih rejected (telat)");
 
-		gabungan.TXTSearch(dataGabungan.SEARCH);
-		test5.log(Status.PASS, "User berhasil mengisi field Search");
+	Thread.sleep(2000);
+	gabungan.goPilihWaktuDaily();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu (telat)");
 
-		gabungan.btnSearch();
-		test5.log(Status.PASS, "User berhasil klik button Search");
+	gabungan.clickWeekly();
+	test5.log(Status.PASS, "User berhasil klik kategori weekly (telat)");
+
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data (telat)");
+
+	Thread.sleep(2000);
+	gabungan.goPilihWaktuWeekly();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu (telat)");
+
+	gabungan.clickMonthly();
+	test5.log(Status.PASS, "User berhasil klik kategori monthly (telat)");
+
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data (telat)");
+
+	/////////////// Pulang Cepat ////////////////
+
+	gabungan.dropdownTelat();
+	test5.log(Status.PASS, "User berhasil klik dropdown telat");
+
+	Thread.sleep(2000);
+	gabungan.clickPulangCepat();
+	test5.log(Status.PASS, "User berhasil klik kategori (Pulang Cepat)");
+
+	gabungan.dropdownBelumTerproses();
+	test5.log(Status.PASS, "User berhasil klik dropdown belum terproses (Pulang Cepat)");
+
+	gabungan.clickApproved();
+	test5.log(Status.PASS, "User berhasil pilih approved (Pulang Cepat)");
+
+	///
+	gabungan.goPilihWaktu();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu (Pulang Cepat)");
+
+	gabungan.clickDaily();
+	test5.log(Status.PASS, "User berhasil klik kategori daily (Pulang Cepat)");
+
+	gabungan.goCalendar1();
+	test5.log(Status.PASS, "User berhasil klik button calender dan menampilkan calendar (Pulang Cepat)");
+
+	gabungan.clickDate();
+	test5.log(Status.PASS, "User berhasil klik tanggal yang diinginkan (Pulang Cepat)");
+
+	gabungan.clickOK4();
+	test5.log(Status.PASS, "User berhasil klik OK4 untuk konfirmasi (Pulang Cepat)");
+
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data (Pulang Cepat)");
+
+	gabungan.dropdownApproved();
+	test5.log(Status.PASS, "User berhasil klik dropdown belum terproses (Pulang Cepat)");
+
+	gabungan.clickRejected();
+	test5.log(Status.PASS, "User berhasil pilih rejected (Pulang Cepat)");
+
+	Thread.sleep(2000);
+	gabungan.goPilihWaktuDaily();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu (Pulang Cepat)");
+
+	gabungan.clickWeekly();
+	test5.log(Status.PASS, "User berhasil klik kategori weekly (Pulang Cepat)");
+
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data (Pulang Cepat)");
+
+	Thread.sleep(2000);
+	gabungan.goPilihWaktuWeekly();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu (Pulang Cepat)");
+
+	gabungan.clickMonthly();
+	test5.log(Status.PASS, "User berhasil klik kategori monthly (Pulang Cepat)");
+
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data (Pulang Cepat)");
+
+	/////////////// Lembur ////////////////
+
+	gabungan.dropdownPulangCepat();
+	test5.log(Status.PASS, "User berhasil klik dropdown Pulang Cepat");
+
+	Thread.sleep(2000);
+	gabungan.clickLembur();
+	test5.log(Status.PASS, "User berhasil klik kategori (Lembur)");
+
+	gabungan.dropdownBelumTerproses();
+	test5.log(Status.PASS, "User berhasil klik dropdown belum terproses (Lembur)");
+
+	gabungan.clickApproved();
+	test5.log(Status.PASS, "User berhasil pilih approved (Lembur)");
+
+	///
+	gabungan.goPilihWaktu();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu (Lembur)");
+
+	gabungan.clickDaily();
+	test5.log(Status.PASS, "User berhasil klik kategori daily (Lembur)");
+
+	gabungan.goCalendar1();
+	test5.log(Status.PASS, "User berhasil klik button calender dan menampilkan calendar (Lembur)");
+
+	gabungan.clickDate();
+	test5.log(Status.PASS, "User berhasil klik tanggal yang diinginkan (Lembur)");
+
+	gabungan.clickOK4();
+	test5.log(Status.PASS, "User berhasil klik OK4 untuk konfirmasi (Lembur)");
+
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data (Lembur)");
+
+	gabungan.dropdownApproved();
+	test5.log(Status.PASS, "User berhasil klik dropdown belum terproses (Lembur)");
+
+	gabungan.clickRejected();
+	test5.log(Status.PASS, "User berhasil pilih rejected (Lembur)");
+
+	Thread.sleep(2000);
+	gabungan.goPilihWaktuDaily();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu (Lembur)");
+
+	gabungan.clickWeekly();
+	test5.log(Status.PASS, "User berhasil klik kategori weekly (Lembur)");
+
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data (Lembur)");
+
+	Thread.sleep(2000);
+	gabungan.goPilihWaktuWeekly();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu (Lembur)");
+
+	gabungan.clickMonthly();
+	test5.log(Status.PASS, "User berhasil klik kategori monthly (Lembur)");
+
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data (Lembur)");
+
+	/////////////// Izin ////////////////
+
+	gabungan.dropdownLembur();
+	test5.log(Status.PASS, "User berhasil klik dropdown lembur");
+
+	Thread.sleep(2000);
+	gabungan.clickIzin();
+	test5.log(Status.PASS, "User berhasil klik kategori (Izin)");
+
+	gabungan.dropdownBelumTerproses();
+	test5.log(Status.PASS, "User berhasil klik dropdown belum terproses (Izin)");
+
+	gabungan.clickApproved();
+	test5.log(Status.PASS, "User berhasil pilih approved (Izin)");
+
+	///
+	gabungan.goPilihWaktu();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu (Izin)");
+
+	gabungan.clickDaily();
+	test5.log(Status.PASS, "User berhasil klik kategori daily (Izin)");
+
+	gabungan.goCalendar1();
+	test5.log(Status.PASS, "User berhasil klik button calender dan menampilkan calendar (Izin)");
+
+	gabungan.clickDate();
+	test5.log(Status.PASS, "User berhasil klik tanggal yang diinginkan (Izin)");
+
+	gabungan.clickOK4();
+	test5.log(Status.PASS, "User berhasil klik OK4 untuk konfirmasi (Izin)");
+
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data (Izin)");
+
+	gabungan.dropdownApproved();
+	test5.log(Status.PASS, "User berhasil klik dropdown belum terproses (Izin)");
+
+	gabungan.clickRejected();
+	test5.log(Status.PASS, "User berhasil pilih rejected (Izin)");
+
+	Thread.sleep(2000);
+	gabungan.goPilihWaktuDaily();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu (Izin)");
+
+	gabungan.clickWeekly();
+	test5.log(Status.PASS, "User berhasil klik kategori weekly (Izin)");
+
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data (Izin)");
+
+	Thread.sleep(2000);
+	gabungan.goPilihWaktuWeekly();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu (Izin)");
+
+	gabungan.clickMonthly();
+	test5.log(Status.PASS, "User berhasil klik kategori monthly (Izin)");
+
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data (Izin)");
+
+	/////////////// Cuti ////////////////
+
+	gabungan.dropdownIzin();
+	test5.log(Status.PASS, "User berhasil klik dropdown izin");
+
+	Thread.sleep(2000);
+	gabungan.clickCuti();
+	test5.log(Status.PASS, "User berhasil klik kategori (Cuti)");
+
+	gabungan.dropdownBelumTerproses();
+	test5.log(Status.PASS, "User berhasil klik dropdown belum terproses (Cuti)");
+
+	gabungan.clickApproved();
+	test5.log(Status.PASS, "User berhasil pilih approved (Cuti)");
+
+	///
+	gabungan.goPilihWaktu();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu (Cuti)");
+
+	gabungan.clickDaily();
+	test5.log(Status.PASS, "User berhasil klik kategori daily (Cuti)");
+
+	gabungan.goCalendar1();
+	test5.log(Status.PASS, "User berhasil klik button calender dan menampilkan calendar (Cuti)");
+
+	gabungan.clickDate();
+	test5.log(Status.PASS, "User berhasil klik tanggal yang diinginkan (Cuti)");
+
+	gabungan.clickOK4();
+	test5.log(Status.PASS, "User berhasil klik OK4 untuk konfirmasi (Cuti)");
+
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data (Cuti)");
+
+	gabungan.dropdownApproved();
+	test5.log(Status.PASS, "User berhasil klik dropdown belum terproses (Cuti)");
+
+	gabungan.clickRejected();
+	test5.log(Status.PASS, "User berhasil pilih rejected (Cuti)");
+
+	Thread.sleep(2000);
+	gabungan.goPilihWaktuDaily();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu (Cuti)");
+
+	gabungan.clickWeekly();
+	test5.log(Status.PASS, "User berhasil klik kategori weekly (Cuti)");
+
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data (Cuti)");
+
+	Thread.sleep(2000);
+	gabungan.goPilihWaktuWeekly();
+	test5.log(Status.PASS, "User berhasil klik button pilih waktu (Cuti)");
+
+	gabungan.clickMonthly();
+	test5.log(Status.PASS, "User berhasil klik kategori monthly (Cuti)");
+
+	gabungan.clickSearch();
+	test5.log(Status.PASS, "User berhasil klik search untuk menampilkan data (Cuti)");
+
+	gabungan.clickRefresh4();
+	test5.log(Status.PASS, "User berhasil klik button refresh");
+
+	gabungan.goInfoAnggota();
+	test5.log(Status.PASS, "User berhasil ke Info Anggota");
+
+	gabungan.goDetail();
+	test5.log(Status.PASS, "User berhasil ke Detai Anggota");
+
+	gabungan.goOKRequest();
+	test5.log(Status.PASS, "User berhasil klik Ok");
+
+	gabungan.goEditRequest();
+	test5.log(Status.PASS, "User berhasil ke form Edit Request");
+
+	gabungan.FotoRequest();
+	test5.log(Status.PASS, "User berhasil mengganti foto");
+
+	gabungan.EditJumlahCuti(dataGabungan.CUTI);
+	test5.log(Status.PASS, "User berhasil mengganti cuti");
+
+	gabungan.btnDropdownShift();
+	test5.log(Status.PASS, "User berhasil klik dropdown Pilih Shift");
+
+	gabungan.btnPilihShiftFullTime();
+	test5.log(Status.PASS, "User berhasil klik Full Time");
+
+	gabungan.btnDropdownShiftFullTime();
+	test5.log(Status.PASS, "User berhasil klik dropdown Pilih Shift");
+
+	gabungan.btnPilihShiftFDS();
+	test5.log(Status.PASS, "User berhasil klik FDS");
+
+	gabungan.btnDropdownShiftFDS();
+	test5.log(Status.PASS, "User berhasil klik dropdown Pilih Shift");
+
+	gabungan.btnPilihShiftShift3();
+	test5.log(Status.PASS, "User berhasil klik Shift 3");
+
+	gabungan.btnDropdownShiftShift3();
+	test5.log(Status.PASS, "User berhasil klik dropdown Pilih Shift");
+
+	gabungan.btnPilihShiftFreelance();
+	test5.log(Status.PASS, "User berhasil klik Freelance");
+
+	gabungan.btnDropdownShiftFreelance();
+	test5.log(Status.PASS, "User berhasil klik dropdown Pilih Shift");
+
+	gabungan.btnPilihShiftShifting();
+	test5.log(Status.PASS, "User berhasil klik Shifting");
+
+	gabungan.btnDropdownShiftShifting();
+	test5.log(Status.PASS, "User berhasil klik dropdown Pilih Shift");
+
+	gabungan.btnPilihShiftShift9();
+	test5.log(Status.PASS, "User berhasil klik Shift 9");
+
+	gabungan.btnDropdownLembur();
+	test5.log(Status.PASS, "User berhasil klik Pilih Lembur");
+
+	gabungan.btnPilihLembur();
+	test5.log(Status.PASS, "User berhasil klik Pilih Tidak Lembur");
+
+	gabungan.btnPengubahData();
+	test5.log(Status.PASS, "User berhasil klik button Ubah Data");
+
+	gabungan.btnOKRequest();
+	test5.log(Status.PASS, "User berhasil klik button Ok");
+
+	gabungan.btnRequestData();
+	test5.log(Status.PASS, "User berhasil klik Request Data");
+
+	gabungan.btnDropdownAll();
+	test5.log(Status.PASS, "User berhasil klik dropdown ALL");
+
+	gabungan.btnPilihNIK();
+	test5.log(Status.PASS, "User berhasil pilih NIK");
+
+	gabungan.btnDropdownNIK();
+	test5.log(Status.PASS, "User berhasil klik dropdown NIK");
+
+	gabungan.btnPilihNama();
+	test5.log(Status.PASS, "User berhasil pilih Nama");
+
+	gabungan.TXTSearch(dataGabungan.SEARCH);
+	test5.log(Status.PASS, "User berhasil mengisi field Search");
+
+	gabungan.btnSearch();
+	test5.log(Status.PASS, "User berhasil klik button Search");
 
 		//////////////////// DASHBOARD///////////////////////
 

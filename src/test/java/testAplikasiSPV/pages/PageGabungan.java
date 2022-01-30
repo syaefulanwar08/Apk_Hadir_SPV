@@ -508,12 +508,12 @@ public class PageGabungan {
 
 	public void clickRefresh4() throws InterruptedException {
 		driver.findElement(btnRefresh4).click();
-		Thread.sleep(2000);
-		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 	}
 
 	////////////////////// DAFTAR REQUEST///////////////////////////////
-	public void goDaftarRequest() {
+	public void goDaftarRequest() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 		driver.findElementByXPath("//android.view.View[@content-desc=\"Daftar Request\"]").click();
 	}
 
